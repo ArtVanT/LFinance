@@ -1,0 +1,25 @@
+{
+  "name": "lfinance",
+  "version": "1.0.0",
+  "description": "website for small business in finance sphere",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtVanT/LFinance.git"
+  },
+  "keywords": [
+    "finance"
+  ],
+  "author": "Arthur Teslin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtVanT/LFinance/issues"
+  },
+  "homepage": "https://github.com/ArtVanT/LFinance#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
