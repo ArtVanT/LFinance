@@ -1,0 +1,107 @@
+.header{
+    width: 100%;
+    background-image: url(/lfinance/img/blob.png);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    height: 690px;
+    
+}
+.nav{
+    width: 100%;
+    padding-top: 19px;
+    height: 91px;
+   
+    .nav__wrapper{
+        display: flex;
+        justify-content: space-around;
+       }
+}
+.nav__list-wrapper{
+    display: flex;
+    .list__item{
+        padding-left: 21px;
+    }
+    
+}
+.auth__wrapper{
+    display: flex;
+    padding-left: 45px;
+   
+    
+    .pad-item{
+        padding-right: 45px;
+    }
+    .member__item{
+        margin-top: -17px;
+        width: 214px;
+        height: 52px;
+        border-radius: 5px;
+        background:  #23A6F0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        
+        .nav__item{
+            position: relative;
+
+        }
+
+        .nav__item::after{
+            content: url(/lfinance/img/arrow-right.svg);
+          left: 155px;
+          top: 19%;
+          position: absolute;
+            
+        }
+    }
+}
+.header-info__wrapper{
+    padding-top: 132px;
+    padding-left: 175px;
+    position: relative;
+    .but__list{
+        display: flex;
+        padding-top: 35px;
+    }
+    // .header-info__wrapper
+    &::after{
+        content: url(/lfinance/img/mockup.png);
+        left: 40px;
+        position: absolute;
+        left: 58%;
+        top: 8%;
+    }
+}
+
+.but__list{
+    .member__item{
+        display: flex;
+        padding: 15px 36px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px;
+        background: #23A6F0;
+    }
+    .learn-more{
+        background: none;
+        margin-left: 10px;
+        display: flex;
+        padding: 15px 36px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px;
+        border: 1px solid  #FFF;
+        color: #FFF;
+        text-align: center;
+
+        /* btn-text */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.2px;
+    }
+}

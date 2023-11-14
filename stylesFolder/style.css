@@ -1,0 +1,493 @@
+.header {
+  width: 100%;
+  background-image: url(/lfinance/img/blob.png);
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+  height: 690px;
+}
+
+.nav {
+  width: 100%;
+  padding-top: 19px;
+  height: 91px;
+}
+.nav .nav__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__list-wrapper {
+  display: flex;
+}
+.nav__list-wrapper .list__item {
+  padding-left: 21px;
+}
+
+.auth__wrapper {
+  display: flex;
+  padding-left: 45px;
+}
+.auth__wrapper .pad-item {
+  padding-right: 45px;
+}
+.auth__wrapper .member__item {
+  margin-top: -17px;
+  width: 214px;
+  height: 52px;
+  border-radius: 5px;
+  background: #23A6F0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth__wrapper .member__item .nav__item {
+  position: relative;
+}
+.auth__wrapper .member__item .nav__item::after {
+  content: url(/lfinance/img/arrow-right.svg);
+  left: 155px;
+  top: 19%;
+  position: absolute;
+}
+
+.header-info__wrapper {
+  padding-top: 132px;
+  padding-left: 175px;
+  position: relative;
+}
+.header-info__wrapper .but__list {
+  display: flex;
+  padding-top: 35px;
+}
+.header-info__wrapper::after {
+  content: url(/lfinance/img/mockup.png);
+  left: 40px;
+  position: absolute;
+  left: 58%;
+  top: 8%;
+}
+
+.but__list .member__item {
+  display: flex;
+  padding: 15px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 37px;
+  background: #23A6F0;
+}
+.but__list .learn-more {
+  background: none;
+  margin-left: 10px;
+  display: flex;
+  padding: 15px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 37px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  text-align: center;
+  /* btn-text */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.2px;
+}
+
+.main__wrapper {
+  padding-top: 221px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.business-strategy__wrapper p {
+  color: #737373;
+}
+
+.business-strategy__blocks-wrapper {
+  display: grid;
+  grid-template-areas: "1 1 1" "2 2 2";
+  gap: 30px;
+  padding-top: 70px;
+}
+.business-strategy__blocks-wrapper .business-strategy__item {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid #F2F2F2;
+  width: 328px;
+  padding: 35px 20px;
+  align-items: flex-start;
+}
+
+.business-item__desc {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.business-item__desc h5 {
+  margin-bottom: 5px;
+}
+
+.clientReview__wrapper {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clientReview__wrapper p {
+  color: #FFF !important;
+}
+.clientReview__wrapper .img__wrapper {
+  padding-top: 80px;
+}
+
+.appinfo__wrapper {
+  padding-top: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.business-strategy__info h2 {
+  text-align: center;
+}
+.business-strategy__info p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.platformDownload__wrapper {
+  padding-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+.platformDownload__wrapper .platform__item {
+  border-radius: 10px;
+  border: 1px solid #BDBDBD;
+  /* Light Dropshadow */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  padding: 18px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.platformDownload__wrapper .platform__item a {
+  display: flex;
+  gap: 25px;
+}
+.platformDownload__wrapper .platform__item a .link-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceBlock__wrapper {
+  padding-top: 240px;
+}
+
+.findPrice__wrapper {
+  padding-top: 96px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.findPrice__wrapper .findPriceText__wrapper {
+  display: flex;
+  color: #23A6F0;
+  gap: 30px;
+}
+.findPrice__wrapper .findPriceText__wrapper .price__digit {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.findPrice__wrapper .findPriceText__wrapper .price__digit button {
+  display: flex;
+  padding: 15px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #23A6F0;
+  color: #FFF;
+  text-align: center;
+  /* btn-text */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.2px;
+  border: none;
+}
+.findPrice__wrapper p {
+  color: #737373;
+}
+.findPrice__wrapper .flex__wrapper {
+  display: flex;
+  gap: 10px;
+}
+.findPrice__wrapper .flex__wrapper .second__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.findPrice__item {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #23A6F0;
+  background: #FFF;
+  padding: 50px;
+  align-items: center;
+}
+
+.branch__wrapper {
+  padding-left: 63px;
+  padding-top: 260px;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+.branch__wrapper .business__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.branch__wrapper .business__info h2, .branch__wrapper .business__info p {
+  text-align: left !important;
+}
+.branch__wrapper .business__info::after {
+  content: url(/lfinance/img/pngwing.png);
+  position: absolute;
+  left: 55%;
+  top: 10%;
+}
+
+.appointmentForm__wrapper {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__wrapper {
+  z-index: 2;
+  display: flex;
+  margin-left: 300px;
+  width: 610px;
+  padding: 40px 50px;
+  flex-direction: column;
+  background-color: #FFF;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+.form__wrapper::before {
+  content: url(/lfinance/img/contact-cover.2.png);
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+.form__wrapper h3 {
+  color: #252B42;
+  text-align: center;
+  font-weight: 600;
+}
+.form__wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__wrapper form label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  width: 509px;
+  height: 84px;
+  gap: 10px;
+  color: #252B42;
+}
+.form__wrapper form label input, .form__wrapper form label select, .form__wrapper form label .custom__select {
+  width: 510px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #E6E6E6;
+  background: #F9F9F9;
+  outline: none;
+}
+.form__wrapper form label input::-moz-placeholder, .form__wrapper form label select::-moz-placeholder, .form__wrapper form label .custom__select::-moz-placeholder {
+  padding-left: 10px;
+}
+.form__wrapper form label input::placeholder, .form__wrapper form label select::placeholder, .form__wrapper form label .custom__select::placeholder {
+  padding-left: 10px;
+}
+.form__wrapper form label .custom__select {
+  position: relative;
+}
+.form__wrapper form label .custom__select::before, .form__wrapper form label .custom__select::after {
+  position: absolute;
+  content: url(/lfinance/img/Vector.svg);
+  right: 1rem;
+  pointer-events: none;
+  top: 33.3%;
+}
+.form__wrapper form label select {
+  padding-left: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.2px;
+}
+.form__wrapper form label option {
+  height: 300px;
+  padding-top: 5px;
+}
+.form__wrapper form button {
+  display: flex;
+  padding: 15px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #23A6F0;
+  color: #FFF;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #252B42 !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .container__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  overflow: visible;
+}
+.container .white-stroke1 {
+  position: absolute;
+  z-index: 1;
+  bottom: -582px;
+  width: 100%;
+  height: 828px;
+  background: #FFF;
+}
+.container .white-stroke1 .black-stroke-footer {
+  width: 100%;
+  height: 338px;
+  margin-top: 416px;
+  background-color: #252B42;
+  z-index: -2;
+}
+
+h1 {
+  /* h1 */
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; /* 137.931% */
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  /* h2 */
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px; /* 142.5% */
+  letter-spacing: 0.2px;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.1px;
+}
+
+h4 {
+  color: #FFF;
+  padding-top: 35px;
+  /* h4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  /* h5 */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+h6 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.2px;
+}
+
+p {
+  /* paragraph */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}/*# sourceMappingURL=style.css.map */
