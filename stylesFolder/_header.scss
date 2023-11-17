@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    background-image: url(/lfinance/img/blob.png);
+    background-image: url(/img/blob.png);
     background-repeat: no-repeat;
     background-position: 0% 20%;
     height: 690px;
@@ -47,7 +47,7 @@
         }
 
         .nav__item::after{
-            content: url(/lfinance/img/arrow-right.svg);
+            content: url(/img/arrow-right.svg);
           left: 155px;
           top: 19%;
           position: absolute;
@@ -62,15 +62,15 @@
     .but__list{
         display: flex;
         padding-top: 35px;
+        &::after{
+            content: url(/img/mockup.png);
+            left: 40px;
+            position: absolute;
+            left: 58%;
+            top: 8%;
+        }
     }
-    // .header-info__wrapper
-    &::after{
-        content: url(/lfinance/img/mockup.png);
-        left: 40px;
-        position: absolute;
-        left: 58%;
-        top: 8%;
-    }
+   
 }
 
 .but__list{

@@ -1,0 +1,63 @@
+@media (max-width: 1260px){
+   .container__wrapper{
+    width: 100%;
+   }
+.header{
+   background: none;
+}
+.header-info__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+.but__list, h4{
+    margin-right: 10%;
+}
+.but__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &::after{
+        content: url(/img/full-blob.svg) !important;
+        top: 700px !important;
+        left: 33.3% !important;
+}
+}
+   
+
+    .business-strategy__blocks-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .business-strategy__item{
+            border: none;
+            position: relative;
+            img{
+                display: none;
+            }
+            &::before{
+                content: url(/img/adaptive-bus-block.svg);
+                position: absolute;
+                left: -20px;
+            }
+        }
+    }
+    .container{
+        background: url(/img/blob2.svg) -8% 5%;
+        background-repeat: no-repeat;
+    }
+    .main__wrapper{
+        padding-top: 817px;
+    }
+    .platformDownload__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        .platform__item{
+            background-color: #FFF;
+        }
+    }
+}

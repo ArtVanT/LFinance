@@ -1,6 +1,7 @@
 @forward "header";
 @forward "main";
 @forward "footer";
+@forward "adaptive";
 *{
     margin: 0;
     padding: 0;
@@ -40,8 +41,6 @@
      
 }
 h1{
-//  color: #FFF;
-/* h1 */
 font-family: Montserrat;
 font-size: 58px;
 font-style: normal;
@@ -50,10 +49,6 @@ line-height: 80px; /* 137.931% */
 letter-spacing: 0.2px;
 }
 h2{
-//     color: var(--light-text-color, #FFF);
-// text-align: center;
-
-/* h2 */
 font-family: Montserrat;
 font-size: 40px;
 font-style: normal;
@@ -111,10 +106,6 @@ line-height: 22px; /* 157.143% */
 letter-spacing: 0.2px;
 }
 p{
-// color: #737373;
-// text-align: center;
-
-/* paragraph */
 font-family: Montserrat;
 font-size: 14px;
 font-style: normal;

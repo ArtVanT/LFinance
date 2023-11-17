@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-image: url(/lfinance/img/blob.png);
+  background-image: url(/img/blob.png);
   background-repeat: no-repeat;
   background-position: 0% 20%;
   height: 690px;
@@ -44,7 +44,7 @@
   position: relative;
 }
 .auth__wrapper .member__item .nav__item::after {
-  content: url(/lfinance/img/arrow-right.svg);
+  content: url(/img/arrow-right.svg);
   left: 155px;
   top: 19%;
   position: absolute;
@@ -59,8 +59,8 @@
   display: flex;
   padding-top: 35px;
 }
-.header-info__wrapper::after {
-  content: url(/lfinance/img/mockup.png);
+.header-info__wrapper .but__list::after {
+  content: url(/img/mockup.png);
   left: 40px;
   position: absolute;
   left: 58%;
@@ -170,7 +170,6 @@
 .platformDownload__wrapper .platform__item {
   border-radius: 10px;
   border: 1px solid #BDBDBD;
-  /* Light Dropshadow */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   display: inline-flex;
   padding: 18px 28px;
@@ -265,7 +264,7 @@
   text-align: left !important;
 }
 .branch__wrapper .business__info::after {
-  content: url(/lfinance/img/pngwing.png);
+  content: url(/img/pngwing.png);
   position: absolute;
   left: 55%;
   top: 10%;
@@ -291,7 +290,7 @@
   position: relative;
 }
 .form__wrapper::before {
-  content: url(/lfinance/img/contact-cover.2.png);
+  content: url(/img/contact-cover.2.png);
   position: absolute;
   right: 100%;
   top: 0;
@@ -334,7 +333,7 @@
 }
 .form__wrapper form label .custom__select::before, .form__wrapper form label .custom__select::after {
   position: absolute;
-  content: url(/lfinance/img/Vector.svg);
+  content: url(/img/Vector.svg);
   right: 1rem;
   pointer-events: none;
   top: 33.3%;
@@ -418,6 +417,67 @@ footer .footer__wrapper {
   padding-top: 10px;
 }
 
+@media (max-width: 1260px) {
+  .container__wrapper {
+    width: 100%;
+  }
+  .header {
+    background: none;
+  }
+  .header-info__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    position: relative;
+  }
+  .but__list, h4 {
+    margin-right: 10%;
+  }
+  .but__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .but__list::after {
+    content: url(/img/full-blob.svg) !important;
+    top: 700px !important;
+    left: 33.3% !important;
+  }
+  .business-strategy__blocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .business-strategy__blocks-wrapper .business-strategy__item {
+    border: none;
+    position: relative;
+  }
+  .business-strategy__blocks-wrapper .business-strategy__item img {
+    display: none;
+  }
+  .business-strategy__blocks-wrapper .business-strategy__item::before {
+    content: url(/img/adaptive-bus-block.svg);
+    position: absolute;
+    left: -20px;
+  }
+  .container {
+    background: url(/img/blob2.svg) -8% 5%;
+    background-repeat: no-repeat;
+  }
+  .main__wrapper {
+    padding-top: 817px;
+  }
+  .platformDownload__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .platformDownload__wrapper .platform__item {
+    background-color: #FFF;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -457,7 +517,6 @@ footer .footer__wrapper {
 }
 
 h1 {
-  /* h1 */
   font-family: Montserrat;
   font-size: 58px;
   font-style: normal;
@@ -467,7 +526,6 @@ h1 {
 }
 
 h2 {
-  /* h2 */
   font-family: Montserrat;
   font-size: 40px;
   font-style: normal;
@@ -532,7 +590,6 @@ a {
 }
 
 p {
-  /* paragraph */
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
