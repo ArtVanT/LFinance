@@ -2,7 +2,7 @@
   width: 100%;
   background-image: url(/img/blob.png);
   background-repeat: no-repeat;
-  background-position: 0% 20%;
+  background-position: 31% 20%;
   height: 690px;
 }
 
@@ -35,7 +35,7 @@
   width: 214px;
   height: 52px;
   border-radius: 5px;
-  background: #23A6F0;
+  background: #23a6f0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +67,10 @@
   top: 8%;
 }
 
+.menu__adaptive {
+  display: none;
+}
+
 .but__list .member__item {
   display: flex;
   padding: 15px 36px;
@@ -74,7 +78,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 37px;
-  background: #23A6F0;
+  background: #23a6f0;
 }
 .but__list .learn-more {
   background: none;
@@ -85,8 +89,8 @@
   align-items: center;
   gap: 10px;
   border-radius: 37px;
-  border: 1px solid #FFF;
-  color: #FFF;
+  border: 1px solid #fff;
+  color: #fff;
   text-align: center;
   /* btn-text */
   font-family: Montserrat;
@@ -291,6 +295,7 @@
 }
 .form__wrapper::before {
   content: url(/img/contact-cover.2.png);
+  display: block;
   position: absolute;
   right: 100%;
   top: 0;
@@ -418,11 +423,30 @@ footer .footer__wrapper {
 }
 
 @media (max-width: 1260px) {
+  .container {
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+  }
+  .container::before {
+    content: url(/img/blob2.svg);
+    position: absolute;
+    left: -2%;
+    top: 180px;
+  }
   .container__wrapper {
-    width: 100%;
+    max-width: 100%;
+    height: 100vw;
   }
   .header {
     background: none;
+  }
+  .menu__adaptive {
+    display: flex;
+    gap: 24px;
+  }
+  .toggle__header {
+    display: none !important;
   }
   .header-info__wrapper {
     display: flex;
@@ -431,6 +455,13 @@ footer .footer__wrapper {
     align-items: center;
     text-align: left;
     position: relative;
+  }
+  .header-info__wrapper .auth {
+    display: none;
+  }
+  .logo__wrapper {
+    display: flex;
+    gap: 70px;
   }
   .but__list, h4 {
     margin-right: 10%;
@@ -441,9 +472,8 @@ footer .footer__wrapper {
     gap: 20px;
   }
   .but__list::after {
-    content: url(/img/full-blob.svg) !important;
-    top: 700px !important;
-    left: 33.3% !important;
+    content: "";
+    display: none;
   }
   .business-strategy__blocks-wrapper {
     display: flex;
@@ -462,12 +492,8 @@ footer .footer__wrapper {
     position: absolute;
     left: -20px;
   }
-  .container {
-    background: url(/img/blob2.svg) -8% 5%;
-    background-repeat: no-repeat;
-  }
   .main__wrapper {
-    padding-top: 817px;
+    padding-top: 449px;
   }
   .platformDownload__wrapper {
     display: flex;
@@ -476,6 +502,150 @@ footer .footer__wrapper {
   }
   .platformDownload__wrapper .platform__item {
     background-color: #FFF;
+    position: relative;
+    padding: 18px 26px;
+  }
+  .platformDownload__wrapper .platform__item a {
+    color: #252B42;
+    padding-left: 75px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .platformDownload__wrapper .platform__item a .b-text {
+    font-family: Object Sans;
+    font-size: 22.893px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.709px;
+    letter-spacing: 0.191px;
+  }
+  .platformDownload__wrapper .platform__item a img {
+    display: none;
+  }
+  .platformDownload__wrapper .platform__item a span {
+    font-family: Object Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.709px;
+    letter-spacing: 0.191px;
+  }
+  .platformDownload__wrapper .platform__item .apple::before {
+    content: url(/img/darkApple.svg);
+    position: absolute;
+    right: 77%;
+    top: 27%;
+  }
+  .platformDownload__wrapper .platform__item .google::before {
+    content: url(/img/darkPlay-store.svg);
+    position: absolute;
+    right: 77%;
+    top: 27%;
+  }
+  .platformDownload__wrapper .platform__item .amazon::before {
+    content: url(/img/darkAmazon.svg);
+    position: absolute;
+    right: 77%;
+    top: 27%;
+  }
+  .platformDownload__wrapper .platform__item .windows::before {
+    content: url(/img/darkWindows.svg);
+    position: absolute;
+    right: 77%;
+    top: 27%;
+  }
+  .img__wrapper {
+    width: 100%;
+  }
+  .findPrice__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .branch__wrapper .business__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .branch__wrapper .business__info::after {
+    content: url(/img/pngwing.png);
+    left: 18%;
+    top: 321px;
+  }
+  .appointmentForm__wrapper {
+    padding-top: 800px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .appointmentForm__wrapper .form__wrapper {
+    position: relative;
+    width: 414px;
+    margin-right: 200px;
+  }
+  .appointmentForm__wrapper .form__wrapper::before {
+    content: "";
+    background-image: url(/img/contact-cover.1.png);
+    width: 100%;
+    height: 259px;
+    left: 0;
+    position: absolute;
+    top: -261px;
+  }
+  .white-stroke1 {
+    width: 100vh;
+    background: #252B42 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__wrapper {
+    padding-top: 278px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px !important;
+  }
+  .align__wrapper {
+    margin-top: 400px;
+    background-color: #FFF;
+  }
+  .align__wrapper .align-text {
+    display: inline-block;
+    line-height: 0 !important;
+    width: 100%;
+    height: 100px;
+  }
+}
+@media (max-width: 750px) {
+  .nav .nav__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .nav__wrapper .nav-list .nav__list-wrapper {
+    padding-top: 100px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column !important;
+  }
+  .nav .nav__wrapper .nav-list .nav__list-wrapper a {
+    text-align: center;
+    /* mobile-menu */
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px; /* 150% */
+    letter-spacing: 0.2px;
+  }
+  .nav .nav__wrapper .auth {
+    display: none;
+  }
+}
+@media (max-width: 742px) {
+  .img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 * {
@@ -486,8 +656,8 @@ footer .footer__wrapper {
 .container {
   background-color: #252B42 !important;
   position: relative;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .container .container__wrapper {
   display: flex;
@@ -503,10 +673,12 @@ footer .footer__wrapper {
 .container .white-stroke1 {
   position: absolute;
   z-index: 1;
+  flex-shrink: 0;
   bottom: -582px;
   width: 100%;
   height: 828px;
   background: #FFF;
+  flex: 1 0 auto;
 }
 .container .white-stroke1 .black-stroke-footer {
   width: 100%;

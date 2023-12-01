@@ -7,11 +7,13 @@
     padding: 0;
    
 }
+
 .container{
     background-color: #252B42 !important;
     position: relative;
-     width: 100%;
-     height: 100%;
+    display: flex;
+    flex-direction: column;
+   
      .container__wrapper{
         display: flex;
         flex-direction: column;
@@ -26,10 +28,12 @@
      .white-stroke1{
         position: absolute;
         z-index: 1;
+        flex-shrink: 0;
         bottom: -582px;
         width: 100%;
         height: 828px;
         background: #FFF;
+        flex: 1 0 auto;
         .black-stroke-footer{
             width: 100%;
             height: 338px;

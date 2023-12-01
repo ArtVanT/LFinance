@@ -191,6 +191,7 @@ align-items: flex-start !important;
     position: relative;
     &::before{
         content: url(/img/contact-cover.2.png);
+        display: block;
         position: absolute;
         right: 100%;
         top: 0;
